@@ -47,12 +47,7 @@ int main()
     
     //[captured close:cc](parameter){func def};
     std::vector <int> v = {3,23,43,2,22};
-    auto A = [=] () 
-    {
-        return (v[0] + v[1] * v[2] + v[3]) ^ v[4];
-    };
-
-    std::function<int()> fA(ref(A));
+    
     //std::for_each(v.begin(),v.end(),something);
     //std::for_each(v.begin(),v.end(),[d, &e](int x){std::cout << d*x << "\n"; std::cout <<"O IS :"<< e + (x/d)<< "\n";});
 
